@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link rel="stylesheet" href="../public/assets/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
   <p style="text-align: center;">
     <%- include('./partials/head.ejs') %>
   </p>
@@ -8,11 +14,27 @@
     <%- include('./partials/nav.ejs') %>
   </p>
   <br>
+  <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+  </div>
+  <form action="/register" method="POST" class="register-form">
+    <h3>Register Here</h3>
 
-  <h1>Register with CollabHub</h1>
+        <label for="username">Email</label>
+        <input type="text" placeholder="Email" id="email" required>
 
-  <form action="/register" method="POST">
-    <label for="email">Email:</label>
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" required>
+
+        <label for="password">Re-enter your Password</label>
+        <input type="password" placeholder="Password" id="password" required>
+        <button type="submit">Register</button>
+        
+    </form>
+</body>
+</html>
+    <!-- <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>
     <br>
     <label for="password">Password:</label>
@@ -25,7 +47,6 @@
   </form>
   <p>
     <br>Go back to <a href="/login">login</a> page to sign in.
-  </p>
-</body>
-</html>
+  </p> -->
+
  

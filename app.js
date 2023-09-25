@@ -13,6 +13,7 @@ app.set('view engine', 'ejs');
 // sets the audio video resources
 app.set()
 
+app.use('/public', express.static('public'));
 // Register view engine for dynamic templates on HTML webpages
 app.use(express.static("res"));
 
